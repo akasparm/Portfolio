@@ -3872,38 +3872,49 @@ input, select, textarea {
 
 /* Intro */
 
-	#intro {
-		background-attachment: fixed;
-		background-image: url("images/intro.svg");
-		background-position: top right;
-		background-repeat: no-repeat;
-		background-size: 100% 100%;
-	}
+#intro {
+    background-attachment: fixed;
+    background-image: url("images/intro.svg");
+    background-position: top right;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 100vh; /* Full height of the viewport */
+}
 
-		#intro p {
-			font-size: 1.25em;
-		}
+/* Adjust inner content spacing */
+#intro .inner {
+    margin-top: -6vh; /* Adjust as needed for desktop */
+}
 
-			@media screen and (max-width: 980px) {
+/* Specific rule for the button within the intro section */
+#intro .actions .button {
+    color: black !important;
+	border-color: black !important; /* Change the button border color to black */
+}
 
-				#intro p br {
-					display: none;
-				}
+/* Media query for mobile devices */
+@media screen and (max-width: 980px) {
+    #intro p br {
+        display: none;
+    }
+}
 
-			}
+@media screen and (max-width: 736px) {
+    #intro p {
+        font-size: 1em;
+    }
 
-			@media screen and (max-width: 736px) {
+    #intro .inner {
+        margin-top: -6vh; /* Adjust as needed for mobile */
+    }
+}
 
-				#intro p {
-					font-size: 1em;
-				}
+@media screen and (max-width: 1280px) {
+    #intro {
+        background-attachment: scroll;
+    }
+}
 
-			}
-
-		@media screen and (max-width: 1280px) {
-
-			#intro {
-				background-attachment: scroll;
-			}
-
-		}
