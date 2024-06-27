@@ -3886,14 +3886,14 @@ input, select, textarea {
 
 /* Adjust inner content spacing */
 #intro .inner {
-    margin-top: -6vh; /* Adjust as needed for desktop */
+    margin-top: 35vh; /* Adjust as needed for desktop */
 }
 
-/* Specific rule for the button within the intro section */
+/* Specific rule for the button within the intro section
 #intro .actions .button {
     color: black !important;
 	border-color: black !important; /* Change the button border color to black */
-}
+} */
 
 /* Media query for mobile devices */
 @media screen and (max-width: 980px) {
@@ -3908,7 +3908,7 @@ input, select, textarea {
     }
 
     #intro .inner {
-        margin-top: -6vh; /* Adjust as needed for mobile */
+        margin-top: 20vh; /* Adjust as needed for mobile */
     }
 }
 

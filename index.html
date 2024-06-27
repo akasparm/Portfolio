@@ -4,12 +4,24 @@
 -->
 <html>
 	<head>
+
 		<title>Portfolio</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<!-- Google tag (gtag.js) -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-TXLYYKS7P9"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+			gtag('config', 'G-TXLYYKS7P9');
+		</script>
 	</head>
+
+
+
 	<body class="is-preload">
 
 		<!-- Sidebar -->
@@ -17,7 +29,8 @@
 				<div class="inner">
 					<nav>
 						<ul>
-							<li><a href="#intro">ABOUT ME</a></li>
+							<li><a href="#intro">HOME</a></li>
+							<li><a href="#about">ABOUT ME</a></li>
 							<li><a href="#skills">SKILLS</a></li>
 							<li><a href="#one">WORK EXPERIENCE</a></li>
 							<li><a href="#two">PROJECTS</a></li>
@@ -31,12 +44,36 @@
 			<div id="wrapper">
 
 				<!-- Intro -->
-					<section id="intro" class="wrapper style1 fullscreen fade-up" style="background-image: url('images/homepage_temp.jpg'); background-size: cover; background-position: center;">
+					<section id="intro" class="wrapper style1 fullscreen fade-up" style="background-image: url('images/home1_.jpg'); background-size: cover; background-position: center;">
 					<!-- <section id="intro" class="wrapper style1 fullscreen fade-up"> -->
-						<div class="inner" style="color:black">
-							<h1 style="color: black;">Akashkumar Parmar</h1>
+						<div class="inner" style="color: white">
+							<h1 style="color: white">Akashkumar Parmar</h1>
 							<p>Infusing heartbeats into robotics: 
 							<br>Bridging mechanical designs with machine intelligence.</p>
+							<ul class="actions">
+								<li><a href="#about" class="button scrolly" style="color: black;">Learn more</a></li>
+							</ul>
+						</div>
+					</section>
+
+					<section id="about" class="wrapper style2 fullscreen fade-up">
+					<!-- <section id="intro" class="wrapper style1 fullscreen fade-up"> -->
+						<div class="inner">
+							<h1 style="color: white;">About Me</h1>
+							<a class="image"><img src="images/about_me.jpg" alt="" data-position="center center" style="max-width:50%"/></a>
+							<p>
+								Hello! I'm Akashkumar Parmar, and my journey into robotics began at the University of Maryland, where I earned my Master's degree in Robotics. My academic background provided a strong foundation in mechanical design, automation, deep learning and computer vision.
+							</p>
+							<p>
+								Through various projects and experiences, I've gained expertise in C++, Python, ROS, SolidWorks, and machine vision. I've developed skills in designing and implementing complex robotic systems, integrating hardware and software, and optimizing automation workflows. My work includes creating autonomous systems, performing real-time object recognition, and enhancing industrial automation processes. Besides, I am constantly learning something new, however I haven't learned how to unlearn yet!
+							</p>
+							<p>
+								From the garage door to the Galaxy's core, I see robotics as a pivotal technology that will transform numerous sectors. This drives my passion for creating systems that improve efficiency, accuracy, and safety in the real world. I'm particularly interested in industrial automation, autonomous systems, and robotic vision, where I believe robotics can make a significant impact. My goal is to continue pushing the boundaries of what's possible with robotics, constantly learning and innovating.
+							</p>
+							<p>
+								Thank you for visiting my portfolio. Let's connect and drive innovation together!
+							</p>
+
 							<ul class="actions">
 								<li><a href="#skills" class="button scrolly" style="color: black;">Learn more</a></li>
 							</ul>
